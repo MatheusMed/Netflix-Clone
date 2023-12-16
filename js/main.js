@@ -13,16 +13,18 @@ function selectItem(e) {
   const tabContentItem = document.querySelector(`#${this.id}-content`);
   console.log(tabContentItem);
   tabContentItem.classList.add('show')
-  
+
 }
 
-function removeBorder () {
+function removeBorder() {
   tabItems.forEach(item => item.classList.remove('tab-border'));
 }
 
-function removeShow () {
+function removeShow() {
   tabContentItems.forEach(item => item.classList.remove('show'));
 }
 
 //Listen For Tab Click
 tabItems.forEach(item => item.addEventListener('click', selectItem));
+
+//Commit
